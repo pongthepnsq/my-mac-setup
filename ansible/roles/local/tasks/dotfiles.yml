@@ -1,19 +1,19 @@
 - name: Copy misc to .dotfiles
   copy:
-    src: misc
+    src: dotfiles/
     dest: ~/.dotfiles
     force: yes
 
 - name: Link bash_profile
   file:
-    src: ~/.dotfiles/misc/bash_profile
+    src: ~/.dotfiles/shell/bash_profile
     path: ~/.bash_profile
     state: link
     force: yes
 
 - name: Link zshrc
   file:
-    src: ~/.dotfiles/misc/zshrc
+    src: ~/.dotfiles/shell/zshrc
     path: ~/.zshrc
     state: link
     force: yes
@@ -27,21 +27,21 @@
 
 - name: Link gitconfig
   file:
-    src: ~/.dotfiles/misc/git/gitconfig
+    src: ~/.dotfiles/git/gitconfig
     path: ~/.gitconfig
     state: link
     force: yes
 
 - name: Link gitignore_global
   file:
-    src: ~/.dotfiles/misc/git/gitignore_global
+    src: ~/.dotfiles/git/gitignore_global
     path: ~/.gitignore_global
     state: link
     force: yes
 
 - name: Link gemrc
   file:
-    src: ~/.dotfiles/misc/ruby/gemrc
+    src: ~/.dotfiles/ruby/gemrc
     path: ~/.gemrc
     state: link
     force: yes
