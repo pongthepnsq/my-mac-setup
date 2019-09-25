@@ -2,9 +2,9 @@
 
 module.exports = {
   config: {
-    verminal: {
-      fontSize: 15
-    },
+    // verminal: {
+    //   fontSize: 15
+    // },
     // hyperTransparentDynamic: {
     //   alpha: 0.5 // default 50%
     // },
@@ -43,7 +43,7 @@ module.exports = {
     updateChannel: 'stable', // 'stable' or 'canary'
     fontFamily: '"Fira Code", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
     fontWeight: 'normal',
-    fontSize: 15,
+    fontSize: 14,
     fontWeightBold: 'bold',
     cursorColor: 'rgba(1, 112, 178, 0.5)',
     cursorAccentColor: '#000',
@@ -95,12 +95,11 @@ module.exports = {
   plugins: [
     'hyperterm-close-on-left',
     'hyper-search',
-    "hyperlinks",
-    "hyper-confirm",
-    "hyper-savetext",
-    "hyper-custom-touchbar",
-    "verminal",
-    "hyperpower"
+    'hyperlinks',
+    'hyper-confirm',
+    'hyper-savetext',
+    'hyper-custom-touchbar',
+    'hyperblue'
   ],
 
   localPlugins: [],

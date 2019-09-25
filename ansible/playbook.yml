@@ -4,6 +4,6 @@
   roles:
     - local
     - packages
-    - after_package
+    - post_install
   vars_files:
     - secrets.yml
