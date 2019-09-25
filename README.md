@@ -6,6 +6,10 @@ macOS setup by ansible script. 🦊
 
 `$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/nijicha/my-mac-setup/master/bootstrap)"`
 
+## NOTE
+
+- [ ] Do `chmod 0600 ~/.netrc` for `rails` and `heroku accounts`
+
 ## TODO
 - [x] More brew & cask packages
 - [x] Add Mas

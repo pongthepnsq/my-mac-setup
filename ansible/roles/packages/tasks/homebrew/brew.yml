@@ -6,6 +6,7 @@
     - ack
     - asciinema
     - asciiquarium
+    - adsf
     - curl
     - figlet
     - fortune
@@ -15,5 +16,6 @@
     - redis
     - sl
     - sqlite
+    - thefuck
     - tree
     - wget
