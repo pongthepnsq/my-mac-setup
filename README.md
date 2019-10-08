@@ -4,7 +4,11 @@ macOS setup by ansible script. 🦊
 
 ## Usage
 
-`$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/nijicha/my-mac-setup/master/bootstrap)"`
+```shell script
+xcode-select --install
+
+sudo echo '/usr/local/bin/zsh' >> /etc/shells
+```
 
 ## NOTE
 
