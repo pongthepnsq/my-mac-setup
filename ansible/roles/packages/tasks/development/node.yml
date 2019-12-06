@@ -25,6 +25,7 @@
     src: ~/.nvm/versions/node/$(nvm current)/
     path: /usr/local/Cellar/node
     state: link
+    force: yes
 
 - name: Homebrew to overwrite linked node
   command: brew link --overwrite node
