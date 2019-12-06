@@ -100,7 +100,7 @@ module.exports = {
     'hyper-confirm',
     'hyper-savetext',
     'hyper-custom-touchbar',
-    "rainglow"
+    'rainglow'
   ],
 
   localPlugins: [],
