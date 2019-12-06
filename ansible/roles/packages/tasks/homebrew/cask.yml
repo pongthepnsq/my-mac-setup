@@ -15,11 +15,11 @@
     - jetbrains-toolbox
     - kap
     - qlcolorcode
-    - qlmarkdown
     - qlprettypatch
     - qlstephen
-    - quicklook-csv
+    - qmk-toolbox
     - quicklook-json
+    - slack
     - spotify
     - visual-studio-code
     - vlc
