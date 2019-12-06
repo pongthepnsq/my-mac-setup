@@ -20,6 +20,8 @@
 - name: Create fake nvm node folder in Homebrew
   command: mkdir /usr/local/Cellar/node
 
+# TODO: this code to linked that f******* node from nvm
+# !!!!!!!!!
 - name: Link current node to Homebrew
   file:
     src: ~/.nvm/versions/node/$(nvm current)/
