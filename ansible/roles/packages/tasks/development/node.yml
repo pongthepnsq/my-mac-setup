@@ -2,8 +2,8 @@
 - name: Ensure nvm installed.
   homebrew: name=nvm state=present
 
-- name: Install node.js (Dubnium LTS) via nvm
-  shell: . $(brew list nvm | ack 'nvm.sh') && nvm install --lts='Dubnium'
+- name: Install node.js (Erbium LTS) via nvm
+  shell: . $(brew list nvm | ack 'nvm.sh') && nvm install --lts='Erbium'
 
 - name: Ensure nvm use installed node.js
   shell: . $(brew list nvm | ack 'nvm.sh') && nvm use default
@@ -16,3 +16,9 @@
 - name: Uninstall node dependencies
   command: brew uninstall --ignore-dependencies node
   ignore_errors: yes
+
+- name: Create fake nvm node folder in Homebrew
+  command: mkdir /usr/local/Cellar/node
+
+- name: Link current node to Homebrew
+  command: ln -s ~/.nvm/versions/node/$(nvm current)/ /usr/local/Cellar/node
