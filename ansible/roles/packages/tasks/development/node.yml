@@ -21,7 +21,10 @@
   command: mkdir /usr/local/Cellar/node
 
 - name: Link current node to Homebrew
-  command: ln -s ~/.nvm/versions/node/$(nvm current)/ /usr/local/Cellar/node
+  file:
+    src: ~/.nvm/versions/node/$(nvm current)/
+    path: /usr/local/Cellar/node
+    state: link
 
 - name: Homebrew to overwrite linked node
   command: brew link --overwrite node
