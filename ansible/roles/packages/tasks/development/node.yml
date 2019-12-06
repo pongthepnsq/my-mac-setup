@@ -22,3 +22,9 @@
 
 - name: Link current node to Homebrew
   command: ln -s ~/.nvm/versions/node/$(nvm current)/ /usr/local/Cellar/node
+
+- name: Homebrew to overwrite linked node
+  command: brew link --overwrite node
+
+- name: Pin original node dependencies from Homebrew yarn
+  command: brew pin node
