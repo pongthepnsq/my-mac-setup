@@ -14,7 +14,6 @@
     - hyper
     - jetbrains-toolbox
     - kap
-    - qlcolorcode
     - qlprettypatch
     - qmk-toolbox
     - quicklook-json
