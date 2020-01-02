@@ -10,12 +10,16 @@
   command: rbenv install 2.4.1
   ignore_errors: yes
 
-- name: Install ruby 2.6.1
-  command: rbenv install 2.6.1
-  ignore_errors: yes
+# - name: Install ruby 2.6.1
+#   command: rbenv install 2.6.1
+#   ignore_errors: yes
 
-- name: Install ruby 2.6.3
-  command: rbenv install 2.6.3
+# - name: Install ruby 2.6.3
+#   command: rbenv install 2.6.3
+#   ignore_errors: yes
+
+- name: Install ruby 2.6.5
+  command: rbenv install 2.6.5
   ignore_errors: yes
 
 - name: rbenv Rehash

@@ -2,35 +2,35 @@
 - name: Ensure nvm installed.
   homebrew: name=nvm state=present
 
-- name: Install node.js (Erbium LTS) via nvm
-  shell: . $(brew list nvm | ack 'nvm.sh') && nvm install --lts='Erbium'
+# - name: Install node.js (Erbium LTS) via nvm
+#   shell: . $(brew list nvm | ack 'nvm.sh') && nvm install --lts='Erbium'
 
-- name: Ensure nvm use installed node.js
-  shell: . $(brew list nvm | ack 'nvm.sh') && nvm use default
+# - name: Ensure nvm use installed node.js
+#   shell: . $(brew list nvm | ack 'nvm.sh') && nvm use default
 
-- name: Install yarn
-  homebrew:
-    name: yarn
-    state: present
+# - name: Install yarn
+#   homebrew:
+#     name: yarn
+#     state: present
 
-- name: Uninstall node dependencies
-  command: brew uninstall --ignore-dependencies node
-  ignore_errors: yes
+# - name: Uninstall node dependencies
+#   command: brew uninstall --ignore-dependencies node
+#   ignore_errors: yes
 
-- name: Create fake nvm node folder in Homebrew
-  command: mkdir /usr/local/Cellar/node
+# - name: Create fake nvm node folder in Homebrew
+#   command: mkdir /usr/local/Cellar/node
 
-# TODO: this code to linked that f******* node from nvm
-# !!!!!!!!!
-- name: Link current node to Homebrew
-  file:
-    src: ~/.nvm/versions/node/$(nvm current)/
-    path: /usr/local/Cellar/node
-    state: link
-    force: yes
+# # TODO: this code to linked that f******* node from nvm
+# # !!!!!!!!!
+# - name: Link current node to Homebrew
+#   file:
+#     src: ~/.nvm/versions/node/$(nvm current)/
+#     path: /usr/local/Cellar/node
+#     state: link
+#     force: yes
 
-- name: Homebrew to overwrite linked node
-  command: brew link --overwrite node
+# - name: Homebrew to overwrite linked node
+#   command: brew link --overwrite node
 
-- name: Pin original node dependencies from Homebrew yarn
-  command: brew pin node
+# - name: Pin original node dependencies from Homebrew yarn
+#   command: brew pin node
