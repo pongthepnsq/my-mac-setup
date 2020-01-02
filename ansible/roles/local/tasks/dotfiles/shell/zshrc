@@ -36,8 +36,8 @@ eval $(thefuck --alias)
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # NVM
-export NVM_DIR=~/.nvm
-. $(brew --prefix nvm)/nvm.sh
+# export NVM_DIR=~/.nvm
+# . $(brew --prefix nvm)/nvm.sh
 
 # Load oh-my-zsh.sh
 . $ZSH/oh-my-zsh.sh
