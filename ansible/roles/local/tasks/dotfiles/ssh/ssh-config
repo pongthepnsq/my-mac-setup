@@ -1,0 +1,15 @@
+# ~/.ssh/config
+
+# Default GitHub
+Host github.com
+  HostName github.com
+  User git 
+  IdentityFile ~/.ssh/id_rsa_personal
+Host github_nsq
+  HostName github.com
+  User git 
+  IdentityFile ~/.ssh/id_rsa_nsq
+Host github_clc
+  HostName github.com
+  User git 
+  IdentityFile ~/.ssh/id_rsa_clc
