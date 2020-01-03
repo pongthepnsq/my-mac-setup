@@ -8,7 +8,7 @@ module.exports = {
     // hyperTransparentDynamic: {
     //   alpha: 0.5 // default 50%
     // },
-    rainglow: 'darkside',
+    rainglow: 'loyal-contrast',
     hyperCustomTouchbar: [
       // if you just need a single button then don't add options array
       { label: 'clear', command: 'clear', backgroundColor: '#d13232' },
