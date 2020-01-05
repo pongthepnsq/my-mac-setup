@@ -13,6 +13,7 @@ sudo echo '/usr/local/bin/zsh' >> /etc/shells
 ## NOTE
 
 - [ ] Do `chmod 0600 ~/.netrc` for `rails` and `heroku accounts`
+- [ ] Do `bundle config --global build.pg --with-pg-config='/Applications/Postgres.app/Contents/Versions/11/bin/pg_config'`
 
 ## TODO
 - [x] More brew & cask packages
