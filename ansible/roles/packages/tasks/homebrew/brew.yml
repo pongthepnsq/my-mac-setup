@@ -3,14 +3,15 @@
     - homebrew
   command: brew install "{{ item }}"
   with_items:
-    - ack
-    - asciinema
-    - asciiquarium
+    # - ack
+    # - asciinema
+    # - asciiquarium
     - curl
     - git
-    - redis
-    - sl
-    - sqlite
-    - thefuck
-    - tree
+    # - redis
+    # - sl
+    # - sqlite
+    # - thefuck
+    # - tree
     - wget
+    - postgresql

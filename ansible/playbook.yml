@@ -2,8 +2,8 @@
 - hosts: localhost
   connection: local
   roles:
-    - local
+    # - local
     - packages
-    - post_install
+    # - post_install
   vars_files:
     - secrets.yml

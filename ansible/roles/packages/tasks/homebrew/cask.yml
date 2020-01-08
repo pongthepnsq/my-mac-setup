@@ -3,21 +3,21 @@
     - cask
   command: brew cask install "{{ item }}"
   with_items:
-    - 1password
+    # - 1password
     - caprine
-    - chromedriver
-    - discord
-    - epubquicklook
-    - evernote
+    # - chromedriver
+    # - discord
+    # - epubquicklook
+    # - evernote
     - google-backup-and-sync
     - google-chrome
     - hyper
-    - jetbrains-toolbox
-    - kap
-    - qlprettypatch
-    - quicklook-json
+    # - jetbrains-toolbox
+    # - kap
+    # - qlprettypatch
+    # - quicklook-json
     - slack
-    - spotify
+    # - spotify
     - visual-studio-code
     - vlc
   ignore_errors: yes
